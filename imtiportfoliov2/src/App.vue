@@ -1,16 +1,14 @@
 
-import FooterComp from './components/FooterComp.vue';
 <template>
   <nav>
-    <NavbarComp/>
+  <NavbarComp/>
   <router-view/>
   <FooterComp/>
   </nav>
-  
 </template>
 <script>
-import FooterComp from './components/FooterComp.vue';
 import NavbarComp from './components/NavbarComp.vue';
+import FooterComp from './components/FooterComp.vue';
 export default {
   components:{
     NavbarComp,
@@ -25,14 +23,15 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  
+  
 }
 *{
-  font-family: "Oswald", sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 
 nav {
-  padding: 30px;
+  padding: 0px;
 }
 
 nav a {
