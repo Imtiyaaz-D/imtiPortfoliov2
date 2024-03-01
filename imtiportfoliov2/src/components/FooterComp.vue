@@ -1,5 +1,5 @@
 <template>
-   <footer class="container-fluid text-center sticky-bottom">
+   <footer class="container-fluid text-center">
      <div class="row">
         <div class="col-md-6">
             <p class="text-md-start ">Powered by Imtiyaaz Damon &COPY; {{ cYear }}</p>
@@ -40,7 +40,7 @@ export default {
     color: red;
 }
 
-.bi {
+.bi{
     font-size: 1.8rem;
     margin: 0.5rem;
     color: black;
@@ -51,7 +51,15 @@ export default {
 }
 .icons{
     display: flex;
-    justify-content: flex-end;
+    margin-left: 25rem;
 }
+@media (min-width:768px){
+ .col-md-6{
+    width: 100% !important;
+ }
+  
+}
+
+
 
 </style>
