@@ -5,7 +5,8 @@ export default createStore({
     testimonials: null,
     projects: null,
     education: null,
-    skills: null
+    skills: null,
+    Ahievements: null,
   },
   getters: {
   },
@@ -21,6 +22,9 @@ export default createStore({
     },
     setSkills(state,skills){
       state.skills = skills
+    },
+    setAhievements(state,Ahievements){
+      state.Ahievements = Ahievements
     }
   },
   actions: {
@@ -56,6 +60,15 @@ export default createStore({
         let res = await fetch(dataUrl)
         let {skills} = await res.json()
         context.commit('setSkills',skills)
+      }catch(e){
+        console.log(e.message)
+      }
+    },
+    async fetchAhievements(context){
+      try{
+        let res = await fetch(dataUrl)
+        let {Ahievements} = await res.json()
+        context.commit('setAhievements', Ahievements)
       }catch(e){
         console.log(e.message)
       }

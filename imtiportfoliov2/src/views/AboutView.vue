@@ -6,9 +6,13 @@
     
         <p class="paragraph-2">I find balance and renewal in being active when I'm not staring at a screen. I love spending time outside to refocus, whether it's through a quick stroll or an energising run around my neighbourhood. On the football pitch, where I play intense games with friends, I can let my competitive nature run wild. In addition, I enjoy relaxing with gaming sessions and making treasured memories and experiences with pals.
         </p>
+
     </div>
-   
-  
+  <div class="btns">
+    <button class="See-skills">See My Skills</button>
+    <button class="See-projects">See My Projects</button>
+    <button  class="See-CV"><a href=" https://drive.google.com/uc?export=download&id=1DMiBMTz-WL9EF6al5KYT9m2A3p8uLixz" target="_blank"> Download CV</a></button>
+  </div>
   </div>
 </template>
 
@@ -19,5 +23,33 @@ export default {
 </script>
 
 <style>
+.btns{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.See-CV,.See-skills,.See-projects{
+  padding: 8px 16px;
+  border:none;
+    outline:none;
+    cursor: pointer;
+    margin: 1rem;
+  display: flex;
+background-color: black;
+color: #ffff;
+border-radius: 10rem;
+font-size: 16px;
+font-weight: thin;
+transition: background-color 1s ease;
+}
+.See-CV:hover{
+  background-color:red;
+}
+.See-skills:hover{
+  background-color: red;
+}
+.See-projects:hover{
+  background-color:red;
 
+}
 </style>

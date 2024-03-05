@@ -100,6 +100,5 @@ button{
 }
 .learn-more-btn:hover{
   background-color:#D62828;
-  
 }
 </style>

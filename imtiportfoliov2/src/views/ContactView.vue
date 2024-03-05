@@ -32,16 +32,11 @@
     </form>
     <div class="line1"></div>
     <div class="icons">
-     <i class="bi bi-globe-europe-africa"></i> <li class="location">Athlone ,Western Cape , 7764</li>
+     <i class="bi bi-globe-europe-africa"></i><li class="location">Athlone ,Western Cape , 7764</li>
     <i class="bi bi-phone"></i> <li class="mobile">+27 68 692 1712</li>
     </div>
 
     </div>
-   
-    
-    
-   
-    <!-- <DividerComp /> -->
   </div>
   
 </template>
@@ -53,7 +48,7 @@ export default {
 </script>
 
 <style> 
-button{
+.button{
     padding:8px 16px;
     border:none;
     outline:none;
@@ -80,18 +75,17 @@ transition: background-color 1s ease;
     flex-direction: column;
     justify-content: center;
     list-style:none;
-    
-    
 }
-/* .li{
+.li{
     text-align: center;
-} */
+}
 
 .form{
     margin:0;
     padding: 0;
     height:30rem;
 }
+
 .form-control{
     border-radius: 0;
     border: none;
@@ -104,31 +98,49 @@ transition: background-color 1s ease;
         border-bottom: 1px solid black;
         border-radius: 0;
         color: black;
-
+        box-sizing: border-box;
+        background-color:rgb(132,191,198);
 }
 .contianer-fluid{
     padding: 2rem;
     background-color:rgb(132,191,198);
-    height: 40rem ;
+    /* height: 40rem ; */
 }
 .row1{
     display: flex;
     flex-direction: row-reverse;
     gap: 15rem;
 }
-input {
+.input {
     margin: 1rem;
     
 }
-textarea {
-    margin: 1rem;
-    background-color:rgb(132,191,198);
-    color: black;
-
-
-}
+/* .textarea {
+    
+    /* color: black; */
 .line1 {
     border-left:  2px solid black;
     height: 30rem;
+}
+@media(max-width: 1300px){
+    .row1{
+        flex-direction: column;
+        gap:1rem;
+    }
+    .form-control,
+    .msg{
+        width:100%
+    }
+    .submit-btn{
+        font-size:1rem;
+       
+    }
+    .icons{
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .line1{
+        display: none;
+    }
 }
 </style>

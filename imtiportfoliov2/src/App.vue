@@ -28,6 +28,7 @@ export default {
 }
 *{
   font-family: "Mulish", sans-serif;
+  
 }
 
 nav {
