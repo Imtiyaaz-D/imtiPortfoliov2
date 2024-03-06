@@ -6,7 +6,7 @@
     <h1>Mogammad Imtiyaaz Damon</h1>
     <h2>{{ typedText }}<span class="cursor"></span></h2>
     <button class="learn-more-btn">
-        <router-link to="/about" style="text-decoration:none ;" @click="scrollTop()"><a>Learn About Me</a></router-link>
+        <router-link to="/about" style="text-decoration:none  ;" @click="scrollTop()">Learn About Me</router-link>
     </button>
   </div>
 </template>
@@ -87,10 +87,14 @@ h2{
 .learn-more-btn{
   background-color:black;
   border-radius: 10rem;
-  color: #ffff;
+  color: white;
   font-size:16px;
   font-weight: thin;
   transition: background-color 0.3s ease;
+}
+.learn-more-btn a{
+  color: white;
+  font-weight: thin;
 }
 button{
     padding:8px 16px;

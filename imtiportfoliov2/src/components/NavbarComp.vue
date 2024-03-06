@@ -46,4 +46,12 @@ export default {
   padding: 0.5rem;
   justify-content: space-between;
 }
+nav  a{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+nav a.router-link-exact-active {
+  color: red;
+}
 </style>

@@ -42,6 +42,11 @@ font-size: 16px;
 font-weight: thin;
 transition: background-color 1s ease;
 }
+.See-CV a{
+  color: white;
+  font: thin;
+  font-size: 16px;
+}
 .See-CV:hover{
   background-color:red;
 }

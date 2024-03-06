@@ -34,14 +34,4 @@ export default {
 nav {
   padding: 0px;
 }
-
-nav a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: red;
-}
 </style>

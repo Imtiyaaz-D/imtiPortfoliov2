@@ -90,7 +90,7 @@ transition: background-color 1s ease;
     border-radius: 0;
     border: none;
     border-bottom: 1px solid ;
-    background-color:rgb(132,191,198);
+    /* background-color:rgb(132,191,198); */
 
 }
 .msg {
@@ -99,11 +99,11 @@ transition: background-color 1s ease;
         border-radius: 0;
         color: black;
         box-sizing: border-box;
-        background-color:rgb(132,191,198);
+        /* background-color:rgb(132,191,198); */
 }
 .contianer-fluid{
     padding: 2rem;
-    background-color:rgb(132,191,198);
+    /* background-color:rgb(132,191,198); */
     /* height: 40rem ; */
 }
 .row1{
