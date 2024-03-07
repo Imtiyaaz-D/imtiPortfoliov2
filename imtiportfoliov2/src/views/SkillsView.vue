@@ -9,8 +9,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="badges">
+            <div class="badges">
         <div class="card-badges p-4" v-for="Ahievements in Ahievements" :key="Ahievements.id" style="width: 20rem;">
   <img :src="Ahievements.image" class="card-img-top-badges" :alt="Ahievements.name">
   <div class="card-body-badges p-4">
@@ -20,6 +19,19 @@
   </div>
 </div>
 </div>
+<div class="education">
+    <div class="edu" v-for="edu in education" :key="edu.id">
+            <div class="card" id="card-styling-education" style="width: 16rem;" >
+                <img id="card-text-education" :src="edu.image" class="card-img-top" :alt="edu.type">
+                <div class="card-body">
+                  <p>{{edu.description}} in {{edu.year}}</p>
+                </div>
+              </div>
+            </div>
+        </div>
+</div>
+        
+
 </template>
 <script>
 export default {
@@ -29,11 +41,15 @@ export default {
         },
         Ahievements(){
             return this.$store.state.Ahievements;
+        },
+        education(){
+            return this.$store.state.education;
         }
     },
     mounted(){
-        this.$store.dispatch("fetchAhievements"),
-        this.$store.dispatch("fetchSkills")
+        this.$store.dispatch("fetchAhievements");
+        this.$store.dispatch("fetchSkills");
+        this.$store.dispatch("fetchEducation")
     }
 
 }
@@ -94,4 +110,12 @@ background-color: red;
 .See-more-btn:hover{
     background-color: red;
 }
+.education{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    gap:3rem;
+}
+
 </style>

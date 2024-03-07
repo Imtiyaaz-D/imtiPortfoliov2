@@ -23,8 +23,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+ 
   
-  
+}
+::-webkit-scrollbar{
+  display: none;
 }
 *{
   font-family: "Mulish", sans-serif;

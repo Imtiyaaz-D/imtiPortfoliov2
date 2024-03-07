@@ -23,10 +23,16 @@ export default {
 </script>
 
 <style>
+
+.container-fluid{
+  height: 100%;
+  
+}
 .btns{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+ 
 }
 .See-CV,.See-skills,.See-projects{
   padding: 8px 16px;
@@ -44,6 +50,7 @@ transition: background-color 1s ease;
 }
 .See-CV a{
   color: white;
+  text-decoration: none;
   font: thin;
   font-size: 16px;
 }

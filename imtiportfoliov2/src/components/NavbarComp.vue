@@ -1,6 +1,6 @@
 <template>
    <div>
-        <nav class="navbar navbar-expand-xl bg-body-tertiary" :style="{}">
+        <nav class="navbar navbar-expand-xl bg-body-tertiary" :style="{ backgroundColor:'white'}">
             <div class="container-fluid">
               <img src="https://iili.io/J1JKzxe.png" :style="{marginLeft:'144px'}" alt="logo" loading="lazy">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,7 +17,6 @@
                   <li class="nav-item">
                     <router-link to="/skills">Skills</router-link>
                   </li>
-                  
                   <li class="nav-item">
                     <router-link to="/projects">Projects</router-link>
                   </li>
@@ -41,6 +40,11 @@ export default {
 </script>
 
 <style>
+.nav{
+  background-color: white;
+ 
+}
+
 .nav-item{
   display: flex;
   padding: 0.5rem;
