@@ -14,7 +14,7 @@ export default createStore({
     setTestimonials(state, testimonials){
       state.testimonials = testimonials
     },
-    setProjects(state,projects){
+    setProject(state,projects){
       state.projects = projects
     },
     setEducation(state,education){
@@ -37,7 +37,7 @@ export default createStore({
         console.log(e.messsage);
       }
     },
-    async fetchProject(context){
+    async fetchProjects(context){
       try{
         let res = await fetch(dataUrl)
         let {projects} = await res.json()
