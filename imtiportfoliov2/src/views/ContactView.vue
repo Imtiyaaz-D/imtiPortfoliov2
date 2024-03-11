@@ -121,14 +121,15 @@ transition: background-color 1s ease;
     padding: 0;
     height:30rem;
 }
-
+.location{
+    width:15rem;
+}
 .form-control{
     border-radius: 0;
     width:100%;
     border: none;
     border-bottom: 1px solid ;
-    /* background-color:rgb(132,191,198); */
-
+    margin-bottom: 1rem; 
 }
 .msg {
         border: none;
@@ -136,12 +137,16 @@ transition: background-color 1s ease;
         border-radius: 0;
         color: black;
         box-sizing: border-box;
-        /* background-color:rgb(132,191,198); */
+        margin-bottom: 1rem; 
+}
+.msg::placeholder{
+    color:rgb(33, 37, 41);
+    text-indent: 10px;
 }
 .contianer-fluid{
     padding: 2rem;
     /* background-color:rgb(132,191,198); */
-    /* height: 40rem ; */
+    height: 38rem ;
 }
 .row1{
     display: flex;
@@ -166,11 +171,17 @@ transition: background-color 1s ease;
     }
     .form-control,
     .msg{
-        width:100%
+    
+        margin-bottom: 1rem; 
     }
     .submit-btn{
         font-size:1rem;
        
+    }
+    .location{
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
     .icons{
         flex-direction: column;

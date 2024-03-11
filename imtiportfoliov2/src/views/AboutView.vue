@@ -11,7 +11,7 @@
   <div class="btns">
     <button class="See-skills">See My Skills</button>
     <button class="See-projects">See My Projects</button>
-    <button  class="See-CV"><a href=" https://drive.google.com/uc?export=download&id=1DMiBMTz-WL9EF6al5KYT9m2A3p8uLixz" target="_blank"> Download CV</a></button>
+    <button  class="See-CV"><a href=" https://drive.google.com/uc?export=download&id=1ZMZIaeT5JbQK4HYMHkcHXrepiS5hc_1r" target="_blank"> Download CV</a></button>
   </div>
   </div>
 </template>
@@ -22,17 +22,19 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
 .container-fluid{
   height: 100%;
   
 }
+/* .about-me-container{
+  height: 30rem;
+} */
 .btns{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
- 
+  margin-bottom: 15rem;
 }
 .See-CV,.See-skills,.See-projects{
   padding: 8px 16px;
