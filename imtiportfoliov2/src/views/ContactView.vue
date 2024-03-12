@@ -1,7 +1,7 @@
 <template>
   <div class="contianer-fluid">
     <div class="row1">
-<form action="" method="post" class="contact">
+<form action="https://formspree.io/f/mwkgqwow" method="post" class="contact">
         <div class="row">
             <div class="col-lg-6">
             <label for="" class="form-label"></label>
