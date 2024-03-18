@@ -117,5 +117,13 @@ background-color: red;
     align-items: center; 
     gap:3rem;
 }
+@media only screen and (max-width: 768px) {
+  .card {
+    max-width: 100%; 
+  }
 
+  .education {
+    gap: 1rem; 
+  }
+}
 </style>

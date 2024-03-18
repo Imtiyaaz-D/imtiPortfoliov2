@@ -40,30 +40,38 @@
   <style scoped>
   .columns {
     height: 35rem;
-    width: 15rem;
+    width: 100%;
   }
-  
+  /* .h3{
+    display: flex;
+    justify-content: center;
+    padding-right: 2rem;
+  } */
   .row {
     display: grid;
     flex-direction: column;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr ;
     gap: 3rem;
   }
   
   .testimonial {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 15rem;
+    margin-left: 15rem; */
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
   }
-  /* .testimonial.scrolled {
-    opacity: 0.5;
-    transform: translateY(-20px);
-    transition: opacity 2.6s ease, transform 2.6s ease;
-  } */
   .p {
     width: 17rem;
     text-align: center;
+    /* width: 100%; */
+  /* max-width: 17rem; */
+ 
   }
   
   .card-body {
@@ -81,16 +89,53 @@
   
   .card-img-top {
     width: 100%;
-    height: 100%;
-    /* object-fit: contain; */
+    height: 27rem ;
+     object-fit: cover;
   }
   
   .card.border.border-dark {
     height: 35rem;
     width: 19rem;
+    /* width: 100%; */
+  /* max-width: 19rem; */
   }
   .background {
     background: black;
   }
+  @media (min-width: 768px) {
+  .columns {
+    width: 100%;
+   display: flex;
+   justify-content: center;
+  }
+  .row {
+    grid-template-columns: 1fr 1fr; 
+  }
+  .h3{
+    width:17rem;
+    text-align: center;
+  }
+  .card-img-top {
+    width: 100%;
+    height: 27rem ;
+     object-fit: cover;
+  }
+}
+
+@media (min-width: 992px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  .columns{
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .testimonial {
+    padding: 0; 
+  }
+}
   </style>
   

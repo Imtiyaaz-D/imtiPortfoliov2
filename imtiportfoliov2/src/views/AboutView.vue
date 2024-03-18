@@ -9,8 +9,8 @@
 
     </div>
   <div class="btns">
-    <button class="See-skills">See My Skills</button>
-    <button class="See-projects">See My Projects</button>
+    <button class="See-skills"><router-link to="/skills">Check out my Skills</router-link></button>
+    <button class="See-projects"><router-link to="/projects"> Check out my Projects</router-link></button>
     <button  class="See-CV"><a href=" https://drive.google.com/uc?export=download&id=1ZMZIaeT5JbQK4HYMHkcHXrepiS5hc_1r" target="_blank"> Download CV</a></button>
   </div>
   </div>
@@ -34,7 +34,7 @@ export default {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 15rem;
+  margin-bottom: 22.5rem;
 }
 .See-CV,.See-skills,.See-projects{
   padding: 8px 16px;
@@ -49,6 +49,18 @@ border-radius: 10rem;
 font-size: 16px;
 font-weight: thin;
 transition: background-color 1s ease;
+}
+.See-skills a{
+  color: white;
+  text-decoration: none;
+  font: thin;
+  font-size: 16px;
+}
+.See-projects a{
+  color: white;
+  text-decoration: none;
+  font: thin;
+  font-size: 16px;
 }
 .See-CV a{
   color: white;

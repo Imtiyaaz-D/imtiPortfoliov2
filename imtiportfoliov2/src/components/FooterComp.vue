@@ -53,13 +53,18 @@ export default {
     display: flex;
     margin-left: 25rem;
 }
-@media (min-width:768px){
- .col-md-6{
+@media (max-width: 767px) {
+  .col-md-6 {
     width: 100% !important;
- }
-  
+    margin-bottom: 1rem; /* Add margin bottom for spacing on smaller screens */
+  }
+
+  .d-flex.justify-content-md-end {
+    justify-content: center !important; /* Center align icons on smaller screens */
+  }
+
+  .text-md-start {
+    text-align: center !important; /* Center align text on smaller screens */
+  }
 }
-
-
-
 </style>
