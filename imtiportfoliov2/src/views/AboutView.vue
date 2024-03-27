@@ -11,7 +11,7 @@
   <div class="btns">
     <button class="See-skills"><router-link to="/skills">Check out my Skills</router-link></button>
     <button class="See-projects"><router-link to="/projects"> Check out my Projects</router-link></button>
-    <button  class="See-CV"><a href=" https://drive.google.com/uc?export=download&id=1ZMZIaeT5JbQK4HYMHkcHXrepiS5hc_1r" target="_blank"> Download CV</a></button>
+    <button  class="See-CV"><a href=" https://drive.google.com/uc?export=download&id=1UpkVlR0Sohj65lS1p1cQkmLuE-oaaHCt" target="_blank"> Download CV</a></button>
   </div>
   </div>
 </template>
